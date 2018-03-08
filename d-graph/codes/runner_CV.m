@@ -72,7 +72,7 @@ function runner_CV_2(alg, datas)
                     
                 [graphInd, graphVal] = findGraphTopNN(X_whole, params);
 
-                [values, ~] =  validateParams_Pair(filename, str2double(scenario), X_whole, pairSet, pairlabel, params, alg, graphInd, graphVal);
+                [values, ~] =  validateParams(filename, str2double(scenario), X_whole, pairSet, pairlabel, params, alg, graphInd, graphVal);
                 params.lambda = values.lambda;
                 params.tau = values.tau;
 
